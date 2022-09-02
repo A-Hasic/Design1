@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Design1</string>
+    <string name="home">Notifications</string>
+    <string name="hello_alexa">Hello,Alexander</string>
+    <string name="archive_1_">Archive(1)</string>
+    <string name="this_is_a_salfe_made_message">This is a salfe made message</string>
+    <string name="i_can_send_you_message_too">I can send you message too</string>
+    <string name="_2_aug_2022">2 Aug 2022</string>
+    <string name="_09_00am">09:00am</string>
+</resources>
