@@ -5,12 +5,6 @@
         android:icon="@drawable/ic_home__1_"
         android:title=""/>
 
-    <item
-        android:id="@+id/bell"
-        android:icon="@drawable/ic_bell"
-        android:title="">
-
-    </item>
 
     <item
         android:id="@+id/file"
