@@ -8,6 +8,32 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/newone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_menu"
+
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:elevation="20dp"
+            android:src="@drawable/profile"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="2dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -18,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -33,7 +59,9 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+
 
 
     <com.google.android.material.textview.MaterialTextView
@@ -49,7 +77,7 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
         android:textColor="@color/white"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
 
         />
 
@@ -58,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/poppins"
         android:text="@string/hello_alexa"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
@@ -71,7 +99,7 @@
         android:layout_width="0dp"
         android:layout_height="500dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="35dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="50dp"
         android:elevation="100dp"

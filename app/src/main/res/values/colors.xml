@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
     <color name="background">#F5F5F5</color>
+    <color name="newone">#0388A6</color>
 
 </resources>
