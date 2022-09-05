@@ -19,33 +19,28 @@ class MainActivity : AppCompatActivity() {
             adapter = MessageAdapter(
                 listOf(
                     Message(
-                        R.drawable.profile,
                         "This is a salfe",
                         "I can send you message",
                         "2 Aug 2022",
                         "09:00 AM"
                     ),
                     Message(
-                        R.drawable.profile,
                         "This is a salfe",
                         "I can send you message",
                         "2 Aug 2022",
                         "09:00 AM"
                     ),
                     Message(
-                        R.drawable.profile,
                         "This is a salfe",
                         "I can send you message",
                         "2 Aug 2022",
                         "09:00 AM"
                     ),Message(
-                        R.drawable.profile,
                         "This is a salfe",
                         "I can send you message",
                         "2 Aug 2022",
                         "09:00 AM"
                     ),Message(
-                        R.drawable.profile,
                         "This is a salfe",
                         "I can send you message",
                         "2 Aug 2022",
@@ -59,7 +54,6 @@ class MainActivity : AppCompatActivity() {
 }
 
 data class Message(
-    val imageUrl: Int,
     val title: String,
     val text: String,
     val date: String,
@@ -86,7 +80,7 @@ class MessageAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val message = items[position]
 
-        holder.image.setImageResource(message.imageUrl)
+//        holder.image.setImageResource(message.imageUrl)
         holder.title.text = message.title
         holder.text.text = message.text
         holder.date.text = message.date
