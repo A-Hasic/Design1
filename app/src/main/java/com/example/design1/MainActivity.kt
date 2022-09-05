@@ -4,16 +4,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import de.hdodenhof.circleimageview.CircleImageView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         findViewById<RecyclerView>(R.id.recyclerView).apply {
             adapter = MessageAdapter(
@@ -65,7 +66,7 @@ class MessageAdapter(
 ) : RecyclerView.Adapter<MessageAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val image = view.findViewById<CircleImageView>(R.id.imageView)
+        val image = view.findViewById<ImageView>(R.id.imageView)
         val title = view.findViewById<TextView>(R.id.this_is_a)
         val text = view.findViewById<TextView>(R.id.i_can_send)
         val date = view.findViewById<TextView>(R.id.august_2)
@@ -91,4 +92,5 @@ class MessageAdapter(
     override fun getItemCount(): Int {
         return items.size
     }
+
 }

@@ -4,11 +4,12 @@
         android:id="@+id/home"
         android:icon="@drawable/ic_home__1_"
         android:title="" />
+<item
+    android:id="@+id/icHolder"
+    android:title="">
 
-    <item
-        android:id="@+id/notification"
-        android:icon="@drawable/ic_bell"
-        android:title="" />
+
+</item>
 
     <item
         android:id="@+id/file"

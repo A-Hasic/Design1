@@ -3,26 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/drawable/ic_archive.xml" value="0.316" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/drawable/ic_bell.xml" value="0.316" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/drawable/ic_file_text.xml" value="0.316" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/drawable/ic_home__1_.xml" value="0.316" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.316" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/drawable/ic_menu.xml" value="0.316" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/font/poppins.xml" value="0.4557291666666667" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/font/poppins_bold.xml" value="0.4557291666666667" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/font/poppins_medium.xml" value="0.4557291666666667" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/font/poppins_thin.xml" value="0.4557291666666667" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/layout/card_layout.xml" value="0.42552083333333335" />
-        <entry key="..\:/Users/Korisnik/StudioProjects/Design1/app/src/main/res/menu/nav_menu.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/ic_archive.xml" value="0.3828125" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/ic_bell.xml" value="0.3828125" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/ic_menu.xml" value="0.3828125" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/ic_vector__1_.xml" value="0.3828125" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/ic_vector__2_.xml" value="0.3828125" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/ic_vector__3_.xml" value="0.3828125" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/shape.xml" value="0.3828125" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/drawable/shape_card.xml" value="0.3828125" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/font/poppins.xml" value="0.396875" />
-        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/layout/card_layout.xml" value="0.22" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/layout/card_layout.xml" value="0.67" />
+        <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/layout/float_button.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/WIN10/AndroidStudioProjects/Design1/app/src/main/res/menu/nav_menu.xml" value="0.20416666666666666" />
       </map>
