@@ -24,6 +24,8 @@
             android:layout_height="50dp"
             app:cardElevation="3dp"
             app:cardCornerRadius="25dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
             <ImageView
@@ -31,7 +33,7 @@
                 android:scaleType="fitXY"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@color/teal_200">
+                android:src="@drawable/profile">
             </ImageView>
         </com.google.android.material.card.MaterialCardView>
 

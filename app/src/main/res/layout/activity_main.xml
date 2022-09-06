@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -11,44 +10,45 @@
         android:layout_marginStart="-1dp"
         android:scaleType="fitXY"
         android:src="@drawable/background"
+        android:background="@drawable/ic_group"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.appcompat.widget.AppCompatImageView>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/ic_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            app:navigationIcon="@drawable/ic_menu">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView1"
+                android:src="@drawable/profile"
                 android:layout_width="50dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
                 android:layout_height="50dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="2dp"
-                android:layout_marginEnd="20dp"
-                android:src="@color/teal_200">
+                android:layout_marginEnd="20dp">
 
             </de.hdodenhof.circleimageview.CircleImageView>
         </com.google.android.material.appbar.MaterialToolbar>
 
         <TextView
             android:id="@+id/id_home"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -56,13 +56,13 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/home"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
 
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/archive_1_"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -73,13 +73,13 @@
             android:text="@string/archive_1_"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:textColor="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
 
             />
 
         <TextView
             android:id="@+id/hello_alexa"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/id_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -87,29 +87,29 @@
             android:fontFamily="@font/poppins_medium"
             android:text="@string/hello_alexa"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_home" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/rectangle_3"
-            app:cardCornerRadius="30dp"
-            app:layout_constraintBottom_toTopOf="@id/navigation"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/hello_alexa"
-            app:cardElevation="20dp"
             android:layout_width="0dp"
             android:layout_height="500dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="35dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="50dp"
-            >
+            android:layout_marginBottom="40dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toTopOf="@id/navigation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hello_alexa">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:layout_height="match_parent">
 
             </androidx.recyclerview.widget.RecyclerView>
 
@@ -123,38 +123,50 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="100dp">
+
+
+            </androidx.core.widget.NestedScrollView>
+
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottom"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:fabCradleMargin="20dp"
-                app:fabCradleVerticalOffset="10dp"
-                android:layout_gravity="bottom"
+                app:fabCradleMargin="10dp"
+                app:fabAlignmentMode="center"
                 app:fabCradleRoundedCornerRadius="20dp"
-                >
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/navig"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:menu="@menu/nav_menu">
+                app:fabCradleVerticalOffset="10dp"
+                android:layout_gravity="bottom">
 
-                </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 
             </com.google.android.material.bottomappbar.BottomAppBar>
 
-
             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                style="@style/Widget.App.FloatingActionButton"
                 android:id="@+id/floating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_bell"
-                app:layout_anchor="@id/bottom" />
+                app:layout_anchor="@+id/bottom"
+                android:background="@color/primaryColor"
+                app:tint="@color/white"
+                app:borderWidth="4dp"
+                app:layout_anchorGravity="center"
+                />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
